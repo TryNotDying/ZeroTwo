@@ -11,10 +11,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.settings;
+package com.TryNotDying.ZeroTwo.settings;
 
 import com.TryNotDying.jdautilities.command.GuildSettingsManager;
-import com.TryNotDying.Zero-Two.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;

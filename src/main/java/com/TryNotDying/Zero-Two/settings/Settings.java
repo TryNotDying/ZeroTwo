@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.settings;
+package com.TryNotDying.ZeroTwo.settings;
 
 import com.TryNotDying.jdautilities.command.GuildSettingsProvider;
 import java.util.Collection;

@@ -11,14 +11,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.music;
+package com.TryNotDying.ZeroTwo.commands.music;
 
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.audio.AudioHandler;
-import com.TryNotDying.Zero-Two.audio.RequestMetadata;
-import com.TryNotDying.Zero-Two.commands.MusicCommand;
-import com.TryNotDying.Zero-Two.utils.FormatUtil;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.audio.AudioHandler;
+import com.TryNotDying.ZeroTwo.audio.RequestMetadata;
+import com.TryNotDying.ZeroTwo.commands.MusicCommand;
+import com.TryNotDying.ZeroTwo.utils.FormatUtil;
 
 /**
  * Above import dependencies

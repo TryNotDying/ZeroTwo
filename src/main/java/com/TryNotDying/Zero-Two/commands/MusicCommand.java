@@ -11,13 +11,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands;
+package com.TryNotDying.ZeroTwo.commands;
 
 import com.TryNotDying.jdautilities.command.Command;
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.settings.Settings;
-import com.TryNotDying.Zero-Two.audio.AudioHandler;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.TryNotDying.ZeroTwo.audio.AudioHandler;
 import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.entities.VoiceChannel;

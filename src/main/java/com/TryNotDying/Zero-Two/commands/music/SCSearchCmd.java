@@ -11,9 +11,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.music;
+package com.TryNotDying.ZeroTwo.commands.music;
 
-import com.TryNotDying.Zero-Two.Bot;
+import com.TryNotDying.ZeroTwo.Bot;
 
 /**
  * Above import dependencies

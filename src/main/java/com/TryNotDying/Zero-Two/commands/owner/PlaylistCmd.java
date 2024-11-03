@@ -11,15 +11,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.owner;
+package com.TryNotDying.ZeroTwo.commands.owner;
 
 import java.io.IOException;
 import java.util.List;
 import com.TryNotDying.jdautilities.command.Command;
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.commands.OwnerCommand;
-import com.TryNotDying.Zero-Two.playlist.PlaylistLoader.Playlist;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
+import com.TryNotDying.ZeroTwo.playlist.PlaylistLoader.Playlist;
 
 /**
  * Above import dependencies

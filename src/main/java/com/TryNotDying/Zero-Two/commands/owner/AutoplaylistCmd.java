@@ -11,12 +11,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.owner;
+package com.TryNotDying.ZeroTwo.commands.owner;
 
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.commands.OwnerCommand;
-import com.TryNotDying.Zero-Two.settings.Settings;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
+import com.TryNotDying.ZeroTwo.settings.Settings;
 
 /**
  * Above import dependencies

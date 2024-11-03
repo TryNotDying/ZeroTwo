@@ -11,10 +11,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.utils;
+package com.TryNotDying.ZeroTwo.utils;
 
-import com.TryNotDying.Zero-Two.Zero-Two;
-import com.TryNotDying.Zero-Two.entities.Prompt;
+import com.TryNotDying.ZeroTwo.ZeroTwo;
+import com.TryNotDying.ZeroTwo.entities.Prompt;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -41,7 +41,7 @@ public class OtherUtil
     public final static String NEW_VERSION_AVAILABLE = "There is a new version of Zero-Two available!\n"
                     + "Current version: %s\n"
                     + "New Version: %s\n\n"
-                    + "Please visit https://github.com/TryNotDying/Zero-Two/releases/latest to get the latest release.";
+                    + "Please visit https://github.com/TryNotDying/ZeroTwo/releases/latest to get the latest release.";
     private final static String WINDOWS_INVALID_PATH = "c:\\windows\\system32\\";
     
     /**
@@ -60,7 +60,7 @@ public class OtherUtil
         {
             try
             {
-                result = Paths.get(new File(Zero-Two.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParentFile().getPath() + File.separator + path);
+                result = Paths.get(new File(ZeroTwo.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParentFile().getPath() + File.separator + path);
             }
             catch(URISyntaxException ignored) {}
         }
@@ -175,8 +175,8 @@ public class OtherUtil
     
     public static String getCurrentVersion()
     {
-        if(Zero-Two.class.getPackage()!=null && Zero-Two.class.getPackage().getImplementationVersion()!=null)
-            return Zero-Two.class.getPackage().getImplementationVersion();
+        if(zerotwo.class.getPackage()!=null && ZeroTwo.class.getPackage().getImplementationVersion()!=null)
+            return ZeroTwo.class.getPackage().getImplementationVersion();
         else
             return "UNKNOWN";
     }
@@ -186,7 +186,7 @@ public class OtherUtil
         try
         {
             Response response = new OkHttpClient.Builder().build()
-                    .newCall(new Request.Builder().get().url("https://api.github.com/repos/TryNotDying/Zero-Two/releases/latest").build())
+                    .newCall(new Request.Builder().get().url("https://api.github.com/repos/TryNotDying/ZeroTwo/releases/latest").build())
                     .execute();
             ResponseBody body = response.body();
             if(body != null)

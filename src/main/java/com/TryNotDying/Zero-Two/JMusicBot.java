@@ -11,21 +11,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two;
+package com.TryNotDying.ZeroTwo;
 
 import com.TryNotDying.jdautilities.command.CommandClient;
 import com.TryNotDying.jdautilities.command.CommandClientBuilder;
 import com.TryNotDying.jdautilities.commons.waiter.EventWaiter;
 import com.TryNotDying.jdautilities.examples.command.*;
-import com.TryNotDying.Zero-Two.commands.admin.*;
-import com.TryNotDying.Zero-Two.commands.dj.*;
-import com.TryNotDying.Zero-Two.commands.general.*;
-import com.TryNotDying.Zero-Two.commands.music.*;
-import com.TryNotDying.Zero-Two.commands.owner.*;
-import com.TryNotDying.Zero-Two.entities.Prompt;
-import com.TryNotDying.Zero-Two.gui.GUI;
-import com.TryNotDying.Zero-Two.settings.SettingsManager;
-import com.TryNotDying.Zero-Two.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.commands.admin.*;
+import com.TryNotDying.ZeroTwo.commands.dj.*;
+import com.TryNotDying.ZeroTwo.commands.general.*;
+import com.TryNotDying.ZeroTwo.commands.music.*;
+import com.TryNotDying.ZeroTwo.commands.owner.*;
+import com.TryNotDying.ZeroTwo.entities.Prompt;
+import com.TryNotDying.ZeroTwo.gui.GUI;
+import com.TryNotDying.ZeroTwo.settings.SettingsManager;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import java.awt.Color;
 import java.util.Arrays;
 import javax.security.auth.login.LoginException;
@@ -42,9 +42,9 @@ import ch.qos.logback.classic.Level;
  * Above import dependencies
  * Below is the Zero-Two class
  */
-public class Zero-Two 
+public class zerotwo 
 {
-    public final static Logger LOG = LoggerFactory.getLogger(Zero-Two.class);
+    public final static Logger LOG = LoggerFactory.getLogger(zerotwo.class);
     public final static Permission[] RECOMMENDED_PERMS = {Permission.MESSAGE_READ, Permission.MESSAGE_WRITE, Permission.MESSAGE_HISTORY, Permission.MESSAGE_ADD_REACTION,
                                 Permission.MESSAGE_EMBED_LINKS, Permission.MESSAGE_ATTACH_FILES, Permission.MESSAGE_MANAGE, Permission.MESSAGE_EXT_EMOJI,
                                 Permission.VOICE_CONNECT, Permission.VOICE_SPEAK, Permission.NICKNAME_CHANGE};
@@ -162,7 +162,7 @@ public class Zero-Two
         }
         catch(ErrorResponseException ex)
         {
-            prompt.alert(Prompt.Level.ERROR, "Zero-Two", ex + "\nInvalid reponse returned when "
+            prompt.alert(Prompt.Level.ERROR, "Zero-Two", ex + "\nInvalid response returned when "
                     + "attempting to connect, please make sure you're connected to the internet");
             System.exit(1);
         }
@@ -172,7 +172,7 @@ public class Zero-Two
     {
         // instantiate about command
         AboutCommand aboutCommand = new AboutCommand(Color.BLUE.brighter(),
-                                "a music bot that is [the shit!](https://github.com/TryNotDying/Zero-Two/) (v" + OtherUtil.getCurrentVersion() + ")",
+                                "a music bot that is [the shit!](https://github.com/TryNotDying/ZeroTwo/) (v" + OtherUtil.getCurrentVersion() + ")",
                                 new String[]{"High-Quality Music Playback", "FastQueue™ Technology", "Supports Many Music Platforms"},
                                 RECOMMENDED_PERMS);
         aboutCommand.setIsAuthor(false);

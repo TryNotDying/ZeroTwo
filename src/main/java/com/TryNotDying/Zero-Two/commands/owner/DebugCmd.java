@@ -11,13 +11,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.owner;
+package com.TryNotDying.ZeroTwo.commands.owner;
 
 import com.TryNotDying.jdautilities.command.CommandEvent;
 import com.TryNotDying.jdautilities.commons.JDAUtilitiesInfo;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.commands.OwnerCommand;
-import com.TryNotDying.Zero-Two.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import com.sedmelluq.discord.lavaplayer.tools.PlayerLibrary;
 import net.dv8tion.jda.api.JDAInfo;
 import net.dv8tion.jda.api.Permission;

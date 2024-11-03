@@ -11,9 +11,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.utils;
+package com.TryNotDying.ZeroTwo.utils;
 
-import com.TryNotDying.Zero-Two.audio.RequestMetadata.UserInfo;
+import com.TryNotDying.ZeroTwo.audio.RequestMetadata.UserInfo;
 import java.util.List;
 import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.TextChannel;

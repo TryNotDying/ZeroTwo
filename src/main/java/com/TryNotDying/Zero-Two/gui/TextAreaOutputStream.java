@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.gui;
+package com.TryNotDying.ZeroTwo.gui;
 
 import java.awt.*;
 import java.io.*;

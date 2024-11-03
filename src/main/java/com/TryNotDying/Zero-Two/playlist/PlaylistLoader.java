@@ -11,10 +11,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.playlist;
+package com.TryNotDying.ZeroTwo.playlist;
 
-import com.TryNotDying.Zero-Two.BotConfig;
-import com.TryNotDying.Zero-Two.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.BotConfig;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;

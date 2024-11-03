@@ -11,11 +11,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two;
+package com.TryNotDying.ZeroTwo;
 
-import com.TryNotDying.Zero-Two.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import java.util.concurrent.TimeUnit;
-import com.TryNotDying.Zero-Two.utils.YoutubeOauth2TokenHandler;
+import com.TryNotDying.ZeroTwo.utils.YoutubeOauth2TokenHandler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.PrivateChannel;
@@ -51,7 +51,7 @@ public class Listener extends ListenerAdapter
         {
             Logger log = LoggerFactory.getLogger("Zero-Two");
             log.warn("This bot is not on any guilds! Use the following link to add the bot to your guilds!");
-            log.warn(event.getJDA().getInviteUrl(Zero-Two.RECOMMENDED_PERMS));
+            log.warn(event.getJDA().getInviteUrl(ZeroTwo.RECOMMENDED_PERMS));
         }
         credit(event.getJDA());
         event.getJDA().getGuilds().forEach((guild) -> 

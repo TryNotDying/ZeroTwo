@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands;
+package com.TryNotDying.ZeroTwo.commands;
 
 import com.TryNotDying.jdautilities.command.Command;
 

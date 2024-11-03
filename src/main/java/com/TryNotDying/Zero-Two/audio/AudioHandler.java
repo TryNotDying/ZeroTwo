@@ -11,13 +11,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.audio;
+package com.TryNotDying.ZeroTwo.audio;
 
-import com.TryNotDying.Zero-Two.playlist.PlaylistLoader.Playlist;
-import com.TryNotDying.Zero-Two.queue.AbstractQueue;
-import com.TryNotDying.Zero-Two.settings.QueueType;
-import com.TryNotDying.Zero-Two.utils.TimeUtil;
-import com.TryNotDying.Zero-Two.settings.RepeatMode;
+import com.TryNotDying.ZeroTwo.playlist.PlaylistLoader.Playlist;
+import com.TryNotDying.ZeroTwo.queue.AbstractQueue;
+import com.TryNotDying.ZeroTwo.settings.QueueType;
+import com.TryNotDying.ZeroTwo.utils.TimeUtil;
+import com.TryNotDying.ZeroTwo.settings.RepeatMode;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
@@ -28,8 +28,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import com.TryNotDying.Zero-Two.settings.Settings;
-import com.TryNotDying.Zero-Two.utils.FormatUtil;
+import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.TryNotDying.ZeroTwo.utils.FormatUtil;
 import com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack;
 import java.nio.ByteBuffer;
 import net.dv8tion.jda.api.EmbedBuilder;

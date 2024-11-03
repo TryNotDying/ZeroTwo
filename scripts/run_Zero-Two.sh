@@ -10,7 +10,7 @@ LOOP=true
 
 download() {
     if [ $DOWNLOAD = true ]; then
-        URL=$(curl -s https://api.github.com/repos/TryNotDying/Zero-Two/releases/latest \
+        URL=$(curl -s https://api.github.com/repos/TryNotDying/ZeroTwo/releases/latest \
            | grep -i "browser_download_url.*\.jar" \
            | sed 's/.*\(http.*\)"/\1/')
         FILENAME=$(echo $URL | sed 's/.*\/\([^\/]*\)/\1/')
@@ -23,7 +23,7 @@ download() {
 }
 
 run() {
-    java -Dnogui=true -jar $(ls -t Zero-Two* | head -1)
+    java -Dnogui=true -jar $(ls -t ZeroTwo* | head -1)
 }
 
 while

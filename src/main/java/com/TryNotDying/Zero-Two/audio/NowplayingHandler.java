@@ -11,11 +11,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.audio;
+package com.TryNotDying.ZeroTwo.audio;
 
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.entities.Pair;
-import com.TryNotDying.Zero-Two.settings.Settings;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.entities.Pair;
+import com.TryNotDying.ZeroTwo.settings.Settings;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import java.util.HashMap;
 import java.util.HashSet;

@@ -11,11 +11,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two;
+package com.TryNotDying.ZeroTwo;
 
-import com.TryNotDying.Zero-Two.entities.Prompt;
-import com.TryNotDying.Zero-Two.utils.OtherUtil;
-import com.TryNotDying.Zero-Two.utils.TimeUtil;
+import com.TryNotDying.ZeroTwo.entities.Prompt;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.typesafe.config.*;
 import java.io.IOException;
@@ -106,7 +106,7 @@ public class BotConfig
             {
                 token = prompt.prompt("Please provide a bot token."
                         + "\nInstructions for obtaining a token can be found here:"
-                        + "\nhttps://github.com/TryNotDying/Zero-Two/wiki/Getting-a-Bot-Token."
+                        + "\nhttps://github.com/TryNotDying/ZeroTwo/wiki/Getting-a-Bot-Token."
                         + "\nBot Token: ");
                 if(token==null)
                 {
@@ -127,7 +127,7 @@ public class BotConfig
                     owner = Long.parseLong(prompt.prompt("Owner ID was missing, or the provided owner ID is not valid."
                         + "\nPlease provide the User ID of the bot's owner."
                         + "\nInstructions for obtaining your User ID can be found here:"
-                        + "\nhttps://github.com/TryNotDying/Zero-Two/wiki/Finding-Your-User-ID"
+                        + "\nhttps://github.com/TryNotDying/ZeroTwo/wiki/Finding-Your-User-ID"
                         + "\nOwner User ID: "));
                 }
                 catch(NumberFormatException | NullPointerException ex)
@@ -176,7 +176,7 @@ public class BotConfig
     
     private static String loadDefaultConfig()
     {
-        String original = OtherUtil.loadResource(new Zero-Two(), "/reference.conf");
+        String original = OtherUtil.loadResource(new ZeroTwo(), "/reference.conf");
         return original==null 
                 ? "token = BOT_TOKEN_HERE\r\nowner = 0 // OWNER ID" 
                 : original.substring(original.indexOf(START_TOKEN)+START_TOKEN.length(), original.indexOf(END_TOKEN)).trim();

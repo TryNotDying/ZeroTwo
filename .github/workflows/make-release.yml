@@ -32,12 +32,12 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
       - name: Rename jar
-        run: mv target/*-All.jar Zero-Two-${{ github.event.inputs.version_number }}.jar
+        run: mv target/*-All.jar ZeroTwo-${{ github.event.inputs.version_number }}.jar
       - name: Upload jar
         uses: actions/upload-artifact@v3
         with:
           name: jar
-          path: Zero-Two-${{ github.event.inputs.version_number }}.jar
+          path: ZeroTwo-${{ github.event.inputs.version_number }}.jar
           if-no-files-found: error
   create_release:
     name: Create Release
@@ -67,4 +67,4 @@ jobs:
             ### Setup
             https://jmusicbot.com/setup  
             https://jmusicbot.com/config  
-            # Download: [Zero-Two-${{ github.event.inputs.version_number }}.jar](https://github.com/TryNotDying/Zero-Two/releases/download/${{ github.event.inputs.version_number }}/Zero-Two-${{ github.event.inputs.version_number }}.jar)
+            # Download: [ZeroTwo-${{ github.event.inputs.version_number }}.jar](https://github.com/TryNotDying/ZeroTwo/releases/download/${{ github.event.inputs.version_number }}/ZeroTwo-${{ github.event.inputs.version_number }}.jar)

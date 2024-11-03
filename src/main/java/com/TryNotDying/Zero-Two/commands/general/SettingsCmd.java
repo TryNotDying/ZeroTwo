@@ -11,15 +11,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.general;
+package com.TryNotDying.ZeroTwo.commands.general;
 
 import com.TryNotDying.jdautilities.command.Command;
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.settings.QueueType;
-import com.TryNotDying.Zero-Two.settings.RepeatMode;
-import com.TryNotDying.Zero-Two.settings.Settings;
-import com.TryNotDying.Zero-Two.utils.FormatUtil;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.settings.QueueType;
+import com.TryNotDying.ZeroTwo.settings.RepeatMode;
+import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.TryNotDying.ZeroTwo.utils.FormatUtil;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.MessageBuilder;
 import net.dv8tion.jda.api.entities.Role;

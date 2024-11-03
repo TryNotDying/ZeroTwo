@@ -11,12 +11,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.audio;
+package com.TryNotDying.ZeroTwo.audio;
 
-import com.TryNotDying.Zero-Two.utils.TimeUtil;
+import com.TryNotDying.ZeroTwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
-import com.TryNotDying.Zero-Two.queue.Queueable;
+import com.TryNotDying.ZeroTwo.queue.Queueable;
 import net.dv8tion.jda.api.entities.User;
 
 /**

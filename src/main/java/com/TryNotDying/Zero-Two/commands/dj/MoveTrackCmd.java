@@ -1,12 +1,12 @@
-package com.TryNotDying.Zero-Two.commands.dj;
+package com.TryNotDying.ZeroTwo.commands.dj;
 
 
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.audio.AudioHandler;
-import com.TryNotDying.Zero-Two.audio.QueuedTrack;
-import com.TryNotDying.Zero-Two.commands.DJCommand;
-import com.TryNotDying.Zero-Two.queue.AbstractQueue;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.audio.AudioHandler;
+import com.TryNotDying.ZeroTwo.audio.QueuedTrack;
+import com.TryNotDying.ZeroTwo.commands.DJCommand;
+import com.TryNotDying.ZeroTwo.queue.AbstractQueue;
 
 /**
  * Command that provides users the ability to move a track in the playlist.

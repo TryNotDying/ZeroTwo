@@ -11,11 +11,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.Zero-Two.commands.owner;
+package com.TryNotDying.ZeroTwo.commands.owner;
 
 import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.Zero-Two.Bot;
-import com.TryNotDying.Zero-Two.commands.OwnerCommand;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
 
 /**
  * Above import dependencies
@@ -29,7 +29,7 @@ public class ShutdownCmd extends OwnerCommand
     {
         this.bot = bot;
         this.name = "shutdown";
-        this.help = "safely shuts down";
+        this.help = "safely shuts down Zero-Two";
         this.aliases = bot.getConfig().getAliases(this.name);
         this.guildOnly = false;
     }
@@ -37,7 +37,7 @@ public class ShutdownCmd extends OwnerCommand
     @Override
     protected void execute(CommandEvent event)
     {
-        event.replyWarning("Shutting down...");
+        event.replyWarning("Zero-Two is shutting down...");
         bot.shutdown();
     }
 }
