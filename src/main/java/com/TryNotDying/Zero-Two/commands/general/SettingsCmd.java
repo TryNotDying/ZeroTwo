@@ -13,8 +13,8 @@
  */
 package com.TryNotDying.ZeroTwo.commands.general;
 
-import com.TryNotDying.jdautilities.command.Command;
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.Command;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.settings.QueueType;
 import com.TryNotDying.ZeroTwo.settings.RepeatMode;

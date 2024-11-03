@@ -15,8 +15,8 @@ package com.TryNotDying.ZeroTwo.commands.music;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.jdautilities.menu.Paginator;
+import com.jagrosh.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.menu.Paginator;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.audio.AudioHandler;
 import com.TryNotDying.ZeroTwo.audio.QueuedTrack;

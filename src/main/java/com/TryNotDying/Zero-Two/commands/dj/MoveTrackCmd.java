@@ -1,7 +1,7 @@
 package com.TryNotDying.ZeroTwo.commands.dj;
 
 
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.audio.AudioHandler;
 import com.TryNotDying.ZeroTwo.audio.QueuedTrack;

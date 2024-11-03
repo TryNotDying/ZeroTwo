@@ -13,8 +13,8 @@
  */
 package com.TryNotDying.ZeroTwo.commands.owner;
 
-import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.jdautilities.commons.JDAUtilitiesInfo;
+import com.jagrosh.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.commons.JDAUtilitiesInfo;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
 import com.TryNotDying.ZeroTwo.utils.OtherUtil;

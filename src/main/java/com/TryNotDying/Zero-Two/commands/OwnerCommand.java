@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.commands;
 
-import com.TryNotDying.jdautilities.command.Command;
+import com.jagrosh.jdautilities.command.Command;
 
 /**
  * Above import dependencies

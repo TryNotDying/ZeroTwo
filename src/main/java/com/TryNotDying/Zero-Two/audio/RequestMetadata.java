@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.audio;
 
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.ZeroTwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import net.dv8tion.jda.api.entities.User;

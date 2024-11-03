@@ -14,8 +14,8 @@
 package com.TryNotDying.ZeroTwo.commands.admin;
 
 import java.util.List;
-import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.jdautilities.commons.utils.FinderUtil;
+import com.jagrosh.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.commons.utils.FinderUtil;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.commands.AdminCommand;
 import com.TryNotDying.ZeroTwo.settings.Settings;

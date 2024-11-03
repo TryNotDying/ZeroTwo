@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.settings;
 
-import com.TryNotDying.jdautilities.command.GuildSettingsProvider;
+import com.jagrosh.jdautilities.command.GuildSettingsProvider;
 import java.util.Collection;
 import java.util.Collections;
 import net.dv8tion.jda.api.entities.Guild;

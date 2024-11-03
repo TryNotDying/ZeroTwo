@@ -16,7 +16,7 @@ package com.TryNotDying.ZeroTwo;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import com.TryNotDying.jdautilities.commons.waiter.EventWaiter;
+import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import com.TryNotDying.ZeroTwo.audio.AloneInVoiceHandler;
 import com.TryNotDying.ZeroTwo.audio.AudioHandler;
 import com.TryNotDying.ZeroTwo.audio.NowplayingHandler;

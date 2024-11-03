@@ -15,8 +15,8 @@ package com.TryNotDying.ZeroTwo.commands.owner;
 
 import java.io.IOException;
 import java.util.List;
-import com.TryNotDying.jdautilities.command.Command;
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.Command;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
 import com.TryNotDying.ZeroTwo.playlist.PlaylistLoader.Playlist;

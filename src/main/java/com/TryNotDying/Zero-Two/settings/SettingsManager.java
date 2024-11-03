@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.settings;
 
-import com.TryNotDying.jdautilities.command.GuildSettingsManager;
+import com.jagrosh.jdautilities.command.GuildSettingsManager;
 import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import java.io.IOException;
 import java.nio.file.Files;

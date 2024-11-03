@@ -15,7 +15,7 @@ package com.TryNotDying.ZeroTwo.commands.owner;
 
 import java.io.IOException;
 import java.io.InputStream;
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
 import com.TryNotDying.ZeroTwo.utils.OtherUtil;

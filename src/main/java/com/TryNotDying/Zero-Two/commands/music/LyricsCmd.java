@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.commands.music;
 
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.jlyrics.LyricsClient;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.audio.AudioHandler;

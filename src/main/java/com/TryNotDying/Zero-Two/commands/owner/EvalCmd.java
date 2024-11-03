@@ -15,7 +15,7 @@ package com.TryNotDying.ZeroTwo.commands.owner;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import com.TryNotDying.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
 import net.dv8tion.jda.api.entities.ChannelType;

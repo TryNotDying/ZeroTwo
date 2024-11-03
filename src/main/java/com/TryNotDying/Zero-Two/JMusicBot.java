@@ -13,10 +13,10 @@
  */
 package com.TryNotDying.ZeroTwo;
 
-import com.TryNotDying.jdautilities.command.CommandClient;
-import com.TryNotDying.jdautilities.command.CommandClientBuilder;
-import com.TryNotDying.jdautilities.commons.waiter.EventWaiter;
-import com.TryNotDying.jdautilities.examples.command.*;
+import com.jagrosh.jdautilities.command.CommandClient;
+import com.jagrosh.jdautilities.command.CommandClientBuilder;
+import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
+import com.jagrosh.jdautilities.examples.command.*;
 import com.TryNotDying.ZeroTwo.commands.admin.*;
 import com.TryNotDying.ZeroTwo.commands.dj.*;
 import com.TryNotDying.ZeroTwo.commands.general.*;

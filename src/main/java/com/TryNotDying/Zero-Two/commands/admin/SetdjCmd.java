@@ -1,6 +1,4 @@
 /*
- * Copyright 2018 John Grosh <john.a.grosh@gmail.com>.
- *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,8 +14,8 @@
 package com.TryNotDying.ZeroTwo.commands.admin;
 
 import java.util.List;
-import com.TryNotDying.jdautilities.command.CommandEvent;
-import com.TryNotDying.jdautilities.commons.utils.FinderUtil;
+import com.jagrosh.jdautilities.command.CommandEvent;
+import com.jagrosh.jdautilities.commons.utils.FinderUtil;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.commands.AdminCommand;
 import com.TryNotDying.ZeroTwo.settings.Settings;
