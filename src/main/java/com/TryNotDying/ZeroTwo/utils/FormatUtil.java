@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.utils;
 
-import com.TryNotDying.ZeroTwo.audio.RequestMetadata.UserInfo;
+import com.jagrosh.jmusicbot.audio.RequestMetadata.UserInfo;
 import java.util.List;
 import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.entities.TextChannel;

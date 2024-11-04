@@ -13,8 +13,8 @@
  */
 package com.TryNotDying.ZeroTwo.utils;
 
-import com.TryNotDying.ZeroTwo.ZeroTwo;
-import com.TryNotDying.ZeroTwo.entities.Prompt;
+import com.TryNotDying.ZeroTwo.zerotwo;
+import com.TryNotDying.ZeroTwo.Prompt;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
