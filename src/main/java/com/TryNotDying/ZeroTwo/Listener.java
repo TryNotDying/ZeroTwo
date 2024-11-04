@@ -13,9 +13,9 @@
  */
 package com.TryNotDying.ZeroTwo;
 
-import com.jagrosh.jmusicbot.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import java.util.concurrent.TimeUnit;
-import com.jagrosh.jmusicbot.utils.YoutubeOauth2TokenHandler;
+import com.TryNotDying.ZeroTwo.utils.YoutubeOauth2TokenHandler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.PrivateChannel;
