@@ -51,7 +51,7 @@ public class Listener extends ListenerAdapter
         {
             Logger log = LoggerFactory.getLogger("Zero-Two");
             log.warn("This bot is not on any guilds! Use the following link to add the bot to your guilds!");
-            log.warn(event.getJDA().getInviteUrl(ZeroTwo.RECOMMENDED_PERMS));
+            log.warn(event.getJDA().getInviteUrl(zerotwo.RECOMMENDED_PERMS));
         }
         credit(event.getJDA());
         event.getJDA().getGuilds().forEach((guild) -> 
