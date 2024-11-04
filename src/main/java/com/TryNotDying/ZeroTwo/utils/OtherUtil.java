@@ -60,7 +60,7 @@ public class OtherUtil
         {
             try
             {
-                result = Paths.get(new File(ZeroTwo.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParentFile().getPath() + File.separator + path);
+                result = Paths.get(new File(zerotwo.class.getProtectionDomain().getCodeSource().getLocation().toURI()).getParentFile().getPath() + File.separator + path);
             }
             catch(URISyntaxException ignored) {}
         }
@@ -175,8 +175,8 @@ public class OtherUtil
     
     public static String getCurrentVersion()
     {
-        if(zerotwo.class.getPackage()!=null && ZeroTwo.class.getPackage().getImplementationVersion()!=null)
-            return ZeroTwo.class.getPackage().getImplementationVersion();
+        if(zerotwo.class.getPackage()!=null && zerotwo.class.getPackage().getImplementationVersion()!=null)
+            return zerotwo.class.getPackage().getImplementationVersion();
         else
             return "UNKNOWN";
     }

@@ -14,7 +14,7 @@
 package com.TryNotDying.ZeroTwo;
 
 import com.TryNotDying.ZeroTwo.entities.Prompt;
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.jagrosh.jmusicbot.utils.OtherUtil;
 import com.TryNotDying.ZeroTwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.typesafe.config.*;

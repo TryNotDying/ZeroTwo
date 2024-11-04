@@ -25,7 +25,7 @@ import com.TryNotDying.ZeroTwo.commands.owner.*;
 import com.TryNotDying.ZeroTwo.entities.Prompt;
 import com.TryNotDying.ZeroTwo.gui.GUI;
 import com.TryNotDying.ZeroTwo.settings.SettingsManager;
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.jagrosh.jmusicbot.utils.OtherUtil;
 import java.awt.Color;
 import java.util.Arrays;
 import javax.security.auth.login.LoginException;

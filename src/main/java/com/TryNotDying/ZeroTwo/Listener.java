@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo;
 
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.jagrosh.jmusicbot.utils.OtherUtil;
 import java.util.concurrent.TimeUnit;
 import com.TryNotDying.ZeroTwo.utils.YoutubeOauth2TokenHandler;
 import net.dv8tion.jda.api.JDA;
