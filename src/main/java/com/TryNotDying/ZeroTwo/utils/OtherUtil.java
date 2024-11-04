@@ -169,7 +169,7 @@ public class OtherUtil
         
         if(latestVersion!=null && !latestVersion.equals(version))
         {
-            prompt.alert(Prompt.Level.WARNING, "Zero-Two Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
+            prompt.alert(Prompt.Level.WARNING, "MusicBot Version", String.format(NEW_VERSION_AVAILABLE, version, latestVersion));
         }
     }
     
