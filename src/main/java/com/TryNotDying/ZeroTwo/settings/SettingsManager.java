@@ -14,7 +14,7 @@
 package com.TryNotDying.ZeroTwo.settings;
 
 import com.jagrosh.jdautilities.command.GuildSettingsManager;
-import com.jagrosh.jmusicbot.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;

@@ -13,11 +13,11 @@
  */
 package com.TryNotDying.ZeroTwo.settings;
 
-import com.jagrosh.jmusicbot.queue.AbstractQueue;
-import com.jagrosh.jmusicbot.queue.FairQueue;
-import com.jagrosh.jmusicbot.queue.LinearQueue;
-import com.jagrosh.jmusicbot.queue.Queueable;
-import com.jagrosh.jmusicbot.queue.QueueSupplier;
+import com.TryNotDying.ZeroTwo.queue.AbstractQueue;
+import com.TryNotDying.ZeroTwo.queue.FairQueue;
+import com.TryNotDying.ZeroTwo.queue.LinearQueue;
+import com.TryNotDying.ZeroTwo.queue.Queueable;
+import com.TryNotDying.ZeroTwo.queue.QueueSupplier;
 
 import java.util.Arrays;
 import java.util.List;

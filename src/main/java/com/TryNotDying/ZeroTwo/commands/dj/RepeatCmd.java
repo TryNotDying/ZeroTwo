@@ -14,10 +14,10 @@
 package com.TryNotDying.ZeroTwo.commands.dj;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.jagrosh.jmusicbot.Bot;
-import com.jagrosh.jmusicbot.commands.DJCommand;
-import com.jagrosh.jmusicbot.settings.RepeatMode;
-import com.jagrosh.jmusicbot.settings.Settings;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.commands.DJCommand;
+import com.TryNotDying.ZeroTwo.settings.RepeatMode;
+import com.TryNotDying.ZeroTwo.settings.Settings;
 
 /**
  * Above inport dependencies

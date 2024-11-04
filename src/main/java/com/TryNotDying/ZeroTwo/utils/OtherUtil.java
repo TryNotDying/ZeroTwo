@@ -13,8 +13,8 @@
  */
 package com.TryNotDying.ZeroTwo.utils;
 
-import com.jagrosh.jmusicbot.JMusicBot;
-import com.jagrosh.jmusicbot.entities.Prompt;
+import com.TryNotDying.ZeroTwo.zerotwo;
+import com.TryNotDying.ZeroTwo.entities.Prompt;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;

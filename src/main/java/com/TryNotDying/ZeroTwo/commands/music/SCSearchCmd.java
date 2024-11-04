@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.commands.music;
 
-import com.jagrosh.jmusicbot.Bot;
+import com.TryNotDying.ZeroTwo.Bot;
 
 /**
  * Above import dependencies

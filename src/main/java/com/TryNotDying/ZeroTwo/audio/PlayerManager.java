@@ -14,7 +14,8 @@
 package com.TryNotDying.ZeroTwo.audio;
 
 import com.dunctebot.sourcemanagers.DuncteBotSources;
-import com.jagrosh.jmusicbot.Bot;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import com.sedmelluq.discord.lavaplayer.container.MediaContainerRegistry;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;

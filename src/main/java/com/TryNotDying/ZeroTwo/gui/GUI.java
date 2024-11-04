@@ -18,7 +18,7 @@ import java.awt.event.WindowListener;
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
-import com.jagrosh.jmusicbot.Bot;
+import com.TryNotDying.ZeroTwo.Bot;
 
 
 /**

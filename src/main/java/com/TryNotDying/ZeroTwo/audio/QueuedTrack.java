@@ -13,10 +13,10 @@
  */
 package com.TryNotDying.ZeroTwo.audio;
 
-import com.jagrosh.jmusicbot.utils.TimeUtil;
+import com.TryNotDying.ZeroTwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrackInfo;
-import com.jagrosh.jmusicbot.queue.Queueable;
+import com.TryNotDying.ZeroTwo.queue.Queueable;
 import net.dv8tion.jda.api.entities.User;
 
 /**

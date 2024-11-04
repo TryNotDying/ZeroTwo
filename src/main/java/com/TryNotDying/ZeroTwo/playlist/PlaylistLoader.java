@@ -13,8 +13,8 @@
  */
 package com.TryNotDying.ZeroTwo.playlist;
 
-import com.jagrosh.jmusicbot.BotConfig;
-import com.jagrosh.jmusicbot.utils.OtherUtil;
+import com.TryNotDying.ZeroTwo.BotConfig;
+import com.TryNotDying.ZeroTwo.utils.OtherUtil;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;

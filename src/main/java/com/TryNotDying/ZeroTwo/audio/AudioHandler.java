@@ -13,11 +13,11 @@
  */
 package com.TryNotDying.ZeroTwo.audio;
 
-import com.jagrosh.jmusicbot.playlist.PlaylistLoader.Playlist;
-import com.jagrosh.jmusicbot.queue.AbstractQueue;
-import com.jagrosh.jmusicbot.settings.QueueType;
-import com.jagrosh.jmusicbot.utils.TimeUtil;
-import com.jagrosh.jmusicbot.settings.RepeatMode;
+import com.TryNotDying.ZeroTwo.playlist.PlaylistLoader.Playlist;
+import com.TryNotDying.ZeroTwo.queue.AbstractQueue;
+import com.TryNotDying.ZeroTwo.settings.QueueType;
+import com.TryNotDying.ZeroTwo.utils.TimeUtil;
+import com.TryNotDying.ZeroTwo.settings.RepeatMode;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
@@ -28,8 +28,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import com.jagrosh.jmusicbot.settings.Settings;
-import com.jagrosh.jmusicbot.utils.FormatUtil;
+import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.TryNotDying.ZeroTwo.utils.FormatUtil;
 import com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack;
 import java.nio.ByteBuffer;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -39,6 +39,7 @@ import net.dv8tion.jda.api.audio.AudioSendHandler;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.User;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**

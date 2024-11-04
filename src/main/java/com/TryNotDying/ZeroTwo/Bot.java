@@ -25,7 +25,7 @@ import com.TryNotDying.ZeroTwo.gui.GUI;
 import com.TryNotDying.ZeroTwo.playlist.PlaylistLoader;
 import com.TryNotDying.ZeroTwo.settings.SettingsManager;
 import java.util.Objects;
-import com.jagrosh.jmusicbot.utils.YoutubeOauth2TokenHandler;
+import com.TryNotDying.ZeroTwo.utils.YoutubeOauth2TokenHandler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;

@@ -14,11 +14,11 @@
 package com.TryNotDying.ZeroTwo.commands.admin;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.jagrosh.jmusicbot.Bot;
-import com.jagrosh.jmusicbot.audio.AudioHandler;
-import com.jagrosh.jmusicbot.commands.AdminCommand;
-import com.jagrosh.jmusicbot.settings.QueueType;
-import com.jagrosh.jmusicbot.settings.Settings;
+import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.ZeroTwo.audio.AudioHandler;
+import com.TryNotDying.ZeroTwo.commands.AdminCommand;
+import com.TryNotDying.ZeroTwo.settings.QueueType;
+import com.TryNotDying.ZeroTwo.settings.Settings;
 
 /**
  * Above import dependencies
