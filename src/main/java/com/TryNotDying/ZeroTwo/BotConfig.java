@@ -104,9 +104,9 @@ public class BotConfig
             // validate bot token
             if(token==null || token.isEmpty() || token.equalsIgnoreCase("BOT_TOKEN_HERE"))
             {
-                token = prompt.prompt("Please provide a bot token."
-                        + "\nInstructions for obtaining a token can be found here:"
-                        + "\nhttps://github.com/TryNotDying/ZeroTwo/wiki/Getting-a-Bot-Token."
+                token = prompt.prompt("Hello, I'm Zero-Two! Hold up one sec!"
+                        + "\nI just realized you didn't put it in me! Your bot token you"
+                        + "\nPERVERT!!! Get one from the Discord Developer Applications."
                         + "\nBot Token: ");
                 if(token==null)
                 {

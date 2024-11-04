@@ -42,6 +42,6 @@ public class ConsolePanel extends JPanel {
         
         super.setLayout(new GridLayout(1,1));
         super.add(pane);
-        super.setPreferredSize(new Dimension(400,300));
+        super.setPreferredSize(new Dimension(600,1200));
     }
 }
