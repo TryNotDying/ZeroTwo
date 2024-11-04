@@ -14,7 +14,7 @@
 package com.TryNotDying.ZeroTwo.commands.music;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.jlyrics.LyricsClient;
+import com.jagrosh.jlyrics.LyricsClient;
 import com.TryNotDying.ZeroTwo.Bot;
 import com.TryNotDying.ZeroTwo.audio.AudioHandler;
 import com.TryNotDying.ZeroTwo.commands.MusicCommand;
