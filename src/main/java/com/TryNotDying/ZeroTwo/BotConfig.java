@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo;
 
-import com.TryNotDying.ZeroTwo.entities.Prompt;
+import com.jagrosh.jmusicbot.entities.Prompt;
 import com.jagrosh.jmusicbot.utils.OtherUtil;
 import com.jagrosh.jmusicbot.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;

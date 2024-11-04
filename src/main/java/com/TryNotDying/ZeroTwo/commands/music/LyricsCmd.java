@@ -14,10 +14,10 @@
 package com.TryNotDying.ZeroTwo.commands.music;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.jlyrics.LyricsClient;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.commands.MusicCommand;
+import com.jagrosh.jlyrics.LyricsClient;
+import com.jagrosh.jmusicbot.Bot;
+import com.jagrosh.jmusicbot.audio.AudioHandler;
+import com.jagrosh.jmusicbot.commands.MusicCommand;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.Permission;
 

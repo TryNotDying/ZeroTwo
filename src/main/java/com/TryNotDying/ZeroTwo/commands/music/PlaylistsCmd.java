@@ -15,8 +15,8 @@ package com.TryNotDying.ZeroTwo.commands.music;
 
 import java.util.List;
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.commands.MusicCommand;
+import com.jagrosh.jmusicbot.Bot;
+import com.jagrosh.jmusicbot.commands.MusicCommand;
 
 /**
  * Above import dependencies

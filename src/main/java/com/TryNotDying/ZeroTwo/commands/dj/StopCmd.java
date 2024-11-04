@@ -14,9 +14,9 @@
 package com.TryNotDying.ZeroTwo.commands.dj;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.commands.DJCommand;
+import com.jagrosh.jmusicbot.Bot;
+import com.jagrosh.jmusicbot.audio.AudioHandler;
+import com.jagrosh.jmusicbot.commands.DJCommand;
 
 /**
  * Above import dependencies

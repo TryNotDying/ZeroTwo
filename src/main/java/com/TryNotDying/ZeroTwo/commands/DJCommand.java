@@ -14,8 +14,8 @@
 package com.TryNotDying.ZeroTwo.commands;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.jagrosh.jmusicbot.Bot;
+import com.jagrosh.jmusicbot.settings.Settings;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Role;
 

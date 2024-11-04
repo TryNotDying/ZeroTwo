@@ -13,7 +13,7 @@
  */
 package com.TryNotDying.ZeroTwo.audio;
 
-import com.TryNotDying.ZeroTwo.Bot;
+import com.jagrosh.jmusicbot.Bot;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceUpdateEvent;
 

@@ -15,11 +15,11 @@ package com.TryNotDying.ZeroTwo.commands.general;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.settings.QueueType;
-import com.TryNotDying.ZeroTwo.settings.RepeatMode;
-import com.TryNotDying.ZeroTwo.settings.Settings;
-import com.TryNotDying.ZeroTwo.utils.FormatUtil;
+import com.jagrosh.jmusicbot.Bot;
+import com.jagrosh.jmusicbot.settings.QueueType;
+import com.jagrosh.jmusicbot.settings.RepeatMode;
+import com.jagrosh.jmusicbot.settings.Settings;
+import com.jagrosh.jmusicbot.utils.FormatUtil;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.MessageBuilder;
 import net.dv8tion.jda.api.entities.Role;
