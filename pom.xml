@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.TryNotDying</groupId>
     <artifactId>ZeroTwo</artifactId>
-    <version>0.0.1.alpha_channel</version>
+    <version>v0.0.4a</version>
     <packaging>jar</packaging>
 
     <repositories>
