@@ -2,7 +2,7 @@ package com.TryNotDying.zerotwo.commands.music;
 
 import com.TryNotDying.zerotwo.audio.RequestMetadata;
 import com.TryNotDying.zerotwo.utils.TimeUtil;
-import com.TryNotDying.zerotwo.utils.SunoURLextractor; // Note: zerotwo, not ZeroTwo
+import com.TryNotDying.zerotwo.utils.SunoURLextractor;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException.Severity;
@@ -18,16 +18,14 @@ import com.TryNotDying.zerotwo.commands.DJCommand;
 import com.TryNotDying.zerotwo.commands.MusicCommand;
 import com.TryNotDying.zerotwo.playlist.PlaylistLoader.Playlist;
 import com.TryNotDying.zerotwo.utils.FormatUtil;
+import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.exceptions.PermissionException;
 
-/**
- *
- * @author TryNotDying
- */
 public class PlayCmd extends MusicCommand {
 
     private final static String LOAD = "\uD83D\uDCE5"; // 📥
@@ -73,15 +71,21 @@ public class PlayCmd extends MusicCommand {
                 ? event.getArgs().substring(1, event.getArgs().length() - 1)
                 : event.getArgs().isEmpty() ? event.getMessage().getAttachments().get(0).getUrl() : event.getArgs();
 
-        List<String> sunoUrls = SunoURLextractor.extractSunoAudioUrls(args);
+        try {
+            List<Map<String, String>> sunoUrls = SunoURLextractor.extractSunoAudioUrls(args);
 
-        if (!sunoUrls.isEmpty()) {
-            for (String url : sunoUrls) {
-                event.reply(loadingEmoji + " Loading... `[" + url + "]`", m -> bot.getPlayerManager().loadItemOrdered(event.getGuild(), url, new ResultHandler(m, event, false)));
+            if (!sunoUrls.isEmpty()) {
+                for (Map<String, String> audioInfo : sunoUrls) {
+                    String url = audioInfo.get("url");
+                    String title = audioInfo.get("title");
+                    event.reply(loadingEmoji + " Loading... `[" + (title != null ? title : "Unknown Title") + "]`",
+                            m -> bot.getPlayerManager().loadItemOrdered(event.getGuild(), url, new ResultHandler(m, event, title, false)));
+                }
+            } else {
+                event.reply(loadingEmoji + " Loading... `[" + args + "]`", m -> bot.getPlayerManager().loadItemOrdered(event.getGuild(), args, new ResultHandler(m, event, null, false)));
             }
-        } else {
-            //Not a Suno URL, proceed as before
-            event.reply(loadingEmoji + " Loading... `[" + args + "]`", m -> bot.getPlayerManager().loadItemOrdered(event.getGuild(), args, new ResultHandler(m, event, false)));
+        } catch (IOException e) {
+            event.replyError("Error fetching Suno playlist: " + e.getMessage());
         }
     }
 
@@ -89,11 +93,13 @@ public class PlayCmd extends MusicCommand {
 
         private final Message m;
         private final CommandEvent event;
+        private final String title;
         private final boolean ytsearch;
 
-        private ResultHandler(Message m, CommandEvent event, boolean ytsearch) {
+        private ResultHandler(Message m, CommandEvent event, String title, boolean ytsearch) {
             this.m = m;
             this.event = event;
+            this.title = title;
             this.ytsearch = ytsearch;
         }
 
@@ -104,8 +110,10 @@ public class PlayCmd extends MusicCommand {
                 return;
             }
             AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
-            int pos = handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event))) + 1;
-            String addMsg = FormatUtil.filter(event.getClient().getSuccess() + " Added **" + track.getInfo().title
+            int pos = handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, title != null ? title : track.getInfo().title))) + 1;
+            String displayTitle = title != null ? title : (track.getInfo().title != null ? track.getInfo().title : "Unknown Title");
+
+            String addMsg = FormatUtil.filter(event.getClient().getSuccess() + " Added **" + displayTitle
                     + "** (`" + TimeUtil.formatTime(track.getDuration()) + "`) " + (pos == 0 ? "to begin playing" : " to the queue at position " + pos));
             if (playlist == null || !event.getSelfMember().hasPermission(event.getTextChannel(), Permission.MESSAGE_ADD_REACTION)) {
                 m.editMessage(addMsg).queue();
@@ -133,11 +141,11 @@ public class PlayCmd extends MusicCommand {
         }
 
         private int loadPlaylist(AudioPlaylist playlist, AudioTrack exclude) {
-            int count = 0; // Correct initialization
+            int count = 0;
             for (AudioTrack track : playlist.getTracks()) {
                 if (!bot.getConfig().isTooLong(track) && !track.equals(exclude)) {
                     AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
-                    handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event)));
+                    handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, title != null ? title : track.getInfo().title)));
                     count++;
                 }
             }
@@ -180,7 +188,7 @@ public class PlayCmd extends MusicCommand {
             if (ytsearch) {
                 m.editMessage(FormatUtil.filter(event.getClient().getWarning() + " No results found for `" + event.getArgs() + "`.")).queue();
             } else {
-                bot.getPlayerManager().loadItemOrdered(event.getGuild(), "ytsearch:" + event.getArgs(), new ResultHandler(m, event, true));
+                bot.getPlayerManager().loadItemOrdered(event.getGuild(), "ytsearch:" + event.getArgs(), new ResultHandler(m, event, title, true));
             }
         }
 
@@ -219,7 +227,7 @@ public class PlayCmd extends MusicCommand {
             }
             event.getChannel().sendMessage(loadingEmoji + " Loading playlist **" + event.getArgs() + "**... (" + playlist.getItems().size() + " items)").queue(m -> {
                 AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
-                playlist.loadTracks(bot.getPlayerManager(), (at) -> handler.addTrack(new QueuedTrack(at, RequestMetadata.fromResultHandler(at, event))), () -> {
+                playlist.loadTracks(bot.getPlayerManager(), (at) -> handler.addTrack(new QueuedTrack(at, RequestMetadata.fromResultHandler(at, event, at.getInfo().title))), () -> {
                     StringBuilder builder = new StringBuilder(playlist.getTracks().isEmpty()
                             ? event.getClient().getWarning() + " No tracks were loaded!"
                             : event.getClient().getSuccess() + " Loaded **" + playlist.getTracks().size() + "** tracks!");

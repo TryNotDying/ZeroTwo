@@ -24,7 +24,7 @@ import net.dv8tion.jda.api.entities.Message;
 
 /**
  *
- * @author TryNotDying < >
+ * @author TryNotDying
  */
 public class NowplayingCmd extends MusicCommand 
 {
