@@ -71,7 +71,7 @@ public class SearchCmd extends MusicCommand {
             }
             AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
             String songTitle = title != null ? title : track.getInfo().title;
-            int pos = handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, songTitle))) + 1;
+            int pos = handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, title != null ? title : track.getInfo().title, null))) + 1;
             m.editMessage(FormatUtil.filter(event.getClient().getSuccess() + " Added **" + track.getInfo().title
                     + "** (`" + TimeUtil.formatTime(track.getDuration()) + "`) " + (pos == 0 ? "to begin playing"
                     : " to the queue at position " + pos))).queue();
@@ -90,8 +90,8 @@ public class SearchCmd extends MusicCommand {
                             return;
                         }
                         AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
-                        String songTitle = title != null ? title : track.getInfo().title;
-                        int pos = handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, songTitle))) + 1;
+                        String songTitle = title != null ? title : track.getInfo().title; //Fallback if title is null.
+                        int pos = handler.addTrack(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, songTitle, null))) + 1;
                         event.replySuccess("Added **" + FormatUtil.filter(track.getInfo().title)
                                 + "** (`" + TimeUtil.formatTime(track.getDuration()) + "`) " + (pos == 0 ? "to begin playing"
                                 : " to the queue at position " + pos));
