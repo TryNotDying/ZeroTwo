@@ -16,6 +16,7 @@ A private Discord bot with a music player that has extensive support for many pl
 [![Setup](http://i.imgur.com/VvXYp5j.png)](https://jmusicbot.com/setup)
 
 ## Features
+  * NEW - Added support for Suno.Ai Music links
   * Easy to run (just make sure Java is installed, and run!)
   * Fast loading of songs
   * Discord Bot token required
