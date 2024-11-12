@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.audio;
+package com.TryNotDying.zerotwo.audio;
 
-import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.zerotwo.Bot;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.guild.voice.GuildVoiceUpdateEvent;
 

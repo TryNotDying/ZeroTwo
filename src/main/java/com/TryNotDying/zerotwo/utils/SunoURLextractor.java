@@ -1,4 +1,4 @@
-package com.TryNotDying.ZeroTwo.utils;
+package com.TryNotDying.zerotwo.utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

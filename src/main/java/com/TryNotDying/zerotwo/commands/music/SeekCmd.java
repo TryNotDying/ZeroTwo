@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.music;
+package com.TryNotDying.zerotwo.commands.music;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.audio.RequestMetadata;
-import com.TryNotDying.ZeroTwo.commands.DJCommand;
-import com.TryNotDying.ZeroTwo.commands.MusicCommand;
-import com.TryNotDying.ZeroTwo.utils.TimeUtil;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.audio.AudioHandler;
+import com.TryNotDying.zerotwo.audio.RequestMetadata;
+import com.TryNotDying.zerotwo.commands.DJCommand;
+import com.TryNotDying.zerotwo.commands.MusicCommand;
+import com.TryNotDying.zerotwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

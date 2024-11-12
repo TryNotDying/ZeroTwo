@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.music;
+package com.TryNotDying.zerotwo.commands.music;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.audio.QueuedTrack;
-import com.TryNotDying.ZeroTwo.commands.MusicCommand;
-import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.audio.AudioHandler;
+import com.TryNotDying.zerotwo.audio.QueuedTrack;
+import com.TryNotDying.zerotwo.commands.MusicCommand;
+import com.TryNotDying.zerotwo.settings.Settings;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.User;
 

@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.admin;
+package com.TryNotDying.zerotwo.commands.admin;
 
 import java.util.List;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.jagrosh.jdautilities.commons.utils.FinderUtil;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.commands.AdminCommand;
-import com.TryNotDying.ZeroTwo.settings.Settings;
-import com.TryNotDying.ZeroTwo.utils.FormatUtil;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.commands.AdminCommand;
+import com.TryNotDying.zerotwo.settings.Settings;
+import com.TryNotDying.zerotwo.utils.FormatUtil;
 import net.dv8tion.jda.api.entities.VoiceChannel;
 
 /**

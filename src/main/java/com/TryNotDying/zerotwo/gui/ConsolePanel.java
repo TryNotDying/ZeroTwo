@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.gui;
+package com.TryNotDying.zerotwo.gui;
 
 import java.awt.Dimension;
 import java.awt.GridLayout;

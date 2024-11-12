@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo;
+package com.TryNotDying.zerotwo;
 
-import com.TryNotDying.ZeroTwo.queue.FairQueue;
-import com.TryNotDying.ZeroTwo.queue.Queueable;
+import com.TryNotDying.zerotwo.queue.FairQueue;
+import com.TryNotDying.zerotwo.queue.Queueable;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

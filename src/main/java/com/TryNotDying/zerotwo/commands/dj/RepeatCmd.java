@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.dj;
+package com.TryNotDying.zerotwo.commands.dj;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.commands.DJCommand;
-import com.TryNotDying.ZeroTwo.settings.RepeatMode;
-import com.TryNotDying.ZeroTwo.settings.Settings;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.commands.DJCommand;
+import com.TryNotDying.zerotwo.settings.RepeatMode;
+import com.TryNotDying.zerotwo.settings.Settings;
 
 /**
  *

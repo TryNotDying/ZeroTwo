@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands;
+package com.TryNotDying.zerotwo.commands;
 
 import com.jagrosh.jdautilities.command.Command;
 

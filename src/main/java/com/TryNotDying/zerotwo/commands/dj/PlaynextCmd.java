@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.dj;
+package com.TryNotDying.zerotwo.commands.dj;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.audio.QueuedTrack;
-import com.TryNotDying.ZeroTwo.audio.RequestMetadata;
-import com.TryNotDying.ZeroTwo.commands.DJCommand;
-import com.TryNotDying.ZeroTwo.utils.FormatUtil;
-import com.TryNotDying.ZeroTwo.utils.TimeUtil;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.audio.AudioHandler;
+import com.TryNotDying.zerotwo.audio.QueuedTrack;
+import com.TryNotDying.zerotwo.audio.RequestMetadata;
+import com.TryNotDying.zerotwo.commands.DJCommand;
+import com.TryNotDying.zerotwo.utils.FormatUtil;
+import com.TryNotDying.zerotwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.tools.FriendlyException;
 import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;

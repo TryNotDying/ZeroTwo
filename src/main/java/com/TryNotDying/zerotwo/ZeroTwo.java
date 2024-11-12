@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo;
+package com.TryNotDying.zerotwo;
 
 import com.jagrosh.jdautilities.command.CommandClient;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
 import com.jagrosh.jdautilities.examples.command.*;
-import com.TryNotDying.ZeroTwo.commands.admin.*;
-import com.TryNotDying.ZeroTwo.commands.dj.*;
-import com.TryNotDying.ZeroTwo.commands.general.*;
-import com.TryNotDying.ZeroTwo.commands.music.*;
-import com.TryNotDying.ZeroTwo.commands.owner.*;
-import com.TryNotDying.ZeroTwo.entities.Prompt;
-import com.TryNotDying.ZeroTwo.gui.GUI;
-import com.TryNotDying.ZeroTwo.settings.SettingsManager;
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.TryNotDying.zerotwo.commands.admin.*;
+import com.TryNotDying.zerotwo.commands.dj.*;
+import com.TryNotDying.zerotwo.commands.general.*;
+import com.TryNotDying.zerotwo.commands.music.*;
+import com.TryNotDying.zerotwo.commands.owner.*;
+import com.TryNotDying.zerotwo.entities.Prompt;
+import com.TryNotDying.zerotwo.gui.GUI;
+import com.TryNotDying.zerotwo.settings.SettingsManager;
+import com.TryNotDying.zerotwo.utils.OtherUtil;
 import java.awt.Color;
 import java.util.Arrays;
 import javax.security.auth.login.LoginException;

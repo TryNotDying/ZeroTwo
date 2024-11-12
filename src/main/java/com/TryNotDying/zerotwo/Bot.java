@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo;
+package com.TryNotDying.zerotwo;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter;
-import com.TryNotDying.ZeroTwo.audio.AloneInVoiceHandler;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.audio.NowplayingHandler;
-import com.TryNotDying.ZeroTwo.audio.PlayerManager;
-import com.TryNotDying.ZeroTwo.gui.GUI;
-import com.TryNotDying.ZeroTwo.playlist.PlaylistLoader;
-import com.TryNotDying.ZeroTwo.settings.SettingsManager;
+import com.TryNotDying.zerotwo.audio.AloneInVoiceHandler;
+import com.TryNotDying.zerotwo.audio.AudioHandler;
+import com.TryNotDying.zerotwo.audio.NowplayingHandler;
+import com.TryNotDying.zerotwo.audio.PlayerManager;
+import com.TryNotDying.zerotwo.gui.GUI;
+import com.TryNotDying.zerotwo.playlist.PlaylistLoader;
+import com.TryNotDying.zerotwo.settings.SettingsManager;
 import java.util.Objects;
-import com.TryNotDying.ZeroTwo.utils.YoutubeOauth2TokenHandler;
+import com.TryNotDying.zerotwo.utils.YoutubeOauth2TokenHandler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;

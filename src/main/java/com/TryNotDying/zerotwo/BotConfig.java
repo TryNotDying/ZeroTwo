@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo;
+package com.TryNotDying.zerotwo;
 
-import com.TryNotDying.ZeroTwo.entities.Prompt;
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
-import com.TryNotDying.ZeroTwo.utils.TimeUtil;
+import com.TryNotDying.zerotwo.entities.Prompt;
+import com.TryNotDying.zerotwo.utils.OtherUtil;
+import com.TryNotDying.zerotwo.utils.TimeUtil;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import com.typesafe.config.*;
 import java.io.IOException;

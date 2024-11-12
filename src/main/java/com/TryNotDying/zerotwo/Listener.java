@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo;
+package com.TryNotDying.zerotwo;
 
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.TryNotDying.zerotwo.utils.OtherUtil;
 import java.util.concurrent.TimeUnit;
-import com.TryNotDying.ZeroTwo.utils.YoutubeOauth2TokenHandler;
+import com.TryNotDying.zerotwo.utils.YoutubeOauth2TokenHandler;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.PrivateChannel;

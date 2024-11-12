@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.entities;
+package com.TryNotDying.zerotwo.entities;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;

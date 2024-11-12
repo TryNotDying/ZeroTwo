@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.music;
+package com.TryNotDying.zerotwo.commands.music;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.jagrosh.jdautilities.menu.Paginator;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.audio.AudioHandler;
-import com.TryNotDying.ZeroTwo.audio.QueuedTrack;
-import com.TryNotDying.ZeroTwo.commands.MusicCommand;
-import com.TryNotDying.ZeroTwo.settings.QueueType;
-import com.TryNotDying.ZeroTwo.settings.RepeatMode;
-import com.TryNotDying.ZeroTwo.settings.Settings;
-import com.TryNotDying.ZeroTwo.utils.FormatUtil;
-import com.TryNotDying.ZeroTwo.utils.TimeUtil;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.audio.AudioHandler;
+import com.TryNotDying.zerotwo.audio.QueuedTrack;
+import com.TryNotDying.zerotwo.commands.MusicCommand;
+import com.TryNotDying.zerotwo.settings.QueueType;
+import com.TryNotDying.zerotwo.settings.RepeatMode;
+import com.TryNotDying.zerotwo.settings.Settings;
+import com.TryNotDying.zerotwo.utils.FormatUtil;
+import com.TryNotDying.zerotwo.utils.TimeUtil;
 import net.dv8tion.jda.api.MessageBuilder;
 import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Message;

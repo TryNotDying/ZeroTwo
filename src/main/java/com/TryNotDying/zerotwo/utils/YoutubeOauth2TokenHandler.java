@@ -1,4 +1,4 @@
-package com.TryNotDying.ZeroTwo.utils;
+package com.TryNotDying.zerotwo.utils;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;

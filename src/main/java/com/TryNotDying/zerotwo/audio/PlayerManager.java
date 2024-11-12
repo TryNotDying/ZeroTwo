@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.audio;
+package com.TryNotDying.zerotwo.audio;
 
 import com.dunctebot.sourcemanagers.DuncteBotSources;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.utils.OtherUtil;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.utils.OtherUtil;
 import com.sedmelluq.discord.lavaplayer.container.MediaContainerRegistry;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager;

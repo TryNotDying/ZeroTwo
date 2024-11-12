@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.commands.owner;
+package com.TryNotDying.zerotwo.commands.owner;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import com.jagrosh.jdautilities.command.CommandEvent;
-import com.TryNotDying.ZeroTwo.Bot;
-import com.TryNotDying.ZeroTwo.commands.OwnerCommand;
+import com.TryNotDying.zerotwo.Bot;
+import com.TryNotDying.zerotwo.commands.OwnerCommand;
 import net.dv8tion.jda.api.entities.ChannelType;
 
 /**

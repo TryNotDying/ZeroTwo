@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.gui;
+package com.TryNotDying.zerotwo.gui;
 
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
-import com.TryNotDying.ZeroTwo.Bot;
+import com.TryNotDying.zerotwo.Bot;
 
 
 /**

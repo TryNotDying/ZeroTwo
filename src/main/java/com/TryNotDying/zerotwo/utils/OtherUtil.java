@@ -13,10 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.utils;
+package com.TryNotDying.zerotwo.utils;
 
-import com.TryNotDying.ZeroTwo.ZeroTwo;
-import com.TryNotDying.ZeroTwo.entities.Prompt;
+import com.TryNotDying.zerotwo.ZeroTwo;
+import com.TryNotDying.zerotwo.entities.Prompt;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;

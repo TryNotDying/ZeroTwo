@@ -13,13 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.TryNotDying.ZeroTwo.settings;
+package com.TryNotDying.zerotwo.settings;
 
-import com.TryNotDying.ZeroTwo.queue.AbstractQueue;
-import com.TryNotDying.ZeroTwo.queue.FairQueue;
-import com.TryNotDying.ZeroTwo.queue.LinearQueue;
-import com.TryNotDying.ZeroTwo.queue.Queueable;
-import com.TryNotDying.ZeroTwo.queue.QueueSupplier;
+import com.TryNotDying.zerotwo.queue.AbstractQueue;
+import com.TryNotDying.zerotwo.queue.FairQueue;
+import com.TryNotDying.zerotwo.queue.LinearQueue;
+import com.TryNotDying.zerotwo.queue.Queueable;
+import com.TryNotDying.zerotwo.queue.QueueSupplier;
 
 import java.util.Arrays;
 import java.util.List;
