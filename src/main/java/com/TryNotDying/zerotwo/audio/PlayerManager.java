@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 TryNotDying <john.a.grosh@gmail.com>.
+ * Copyright 2018 TryNotDying  
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ import java.nio.file.NoSuchFileException;
 
 /**
  *
- * @author TryNotDying (john.a.grosh@gmail.com)
+ * @author TryNotDying ( )
  */
 public class PlayerManager extends DefaultAudioPlayerManager
 {

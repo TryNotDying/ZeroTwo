@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 TryNotDying <john.a.grosh@gmail.com>.
+ * Copyright 2021 TryNotDying  
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 
 /**
  *
- * @author TryNotDying (john.a.grosh@gmail.com)
+ * @author TryNotDying ( )
  */
 public class RequestMetadata
 {

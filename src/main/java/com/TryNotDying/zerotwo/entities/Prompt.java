@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author TryNotDying (john.a.grosh@gmail.com)
+ * @author TryNotDying ( )
  */
 public class Prompt
 {

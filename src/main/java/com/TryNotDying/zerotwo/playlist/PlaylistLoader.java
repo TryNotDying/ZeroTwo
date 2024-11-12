@@ -31,7 +31,7 @@ import java.util.stream.Collectors;
 
 /**
  *
- * @author TryNotDying (john.a.grosh@gmail.com)
+ * @author TryNotDying ( )
  */
 public class PlaylistLoader
 {

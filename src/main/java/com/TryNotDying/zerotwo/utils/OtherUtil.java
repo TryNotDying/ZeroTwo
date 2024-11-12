@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 TryNotDying <john.a.grosh@gmail.com>.
+ * Copyright 2018 TryNotDying  
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import org.json.JSONTokener;
 
 /**
  *
- * @author TryNotDying <john.a.grosh@gmail.com>
+ * @author TryNotDying < >
  */
 public class OtherUtil
 {
