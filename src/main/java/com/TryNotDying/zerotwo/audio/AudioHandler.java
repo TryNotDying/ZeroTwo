@@ -84,7 +84,6 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler 
         queue.clear();
         defaultQueue.clear();
         audioPlayer.stopTrack();
-        //current = null;
     }
 
     public boolean isMusicPlaying(JDA jda) {
@@ -130,7 +129,6 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler 
         return true;
     }
 
-    // Audio Events
     @Override
     public void onTrackEnd(AudioPlayer player, AudioTrack track, AudioTrackEndReason endReason) {
         RepeatMode repeatMode = manager.getBot().getSettingsManager().getSettings(guildId).getRepeatMode();
@@ -144,7 +142,7 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler 
 
         if (queue.isEmpty()) {
             if (!playFromDefault()) {
-                manager.getBot().getNowplayingHandler().onTrackUpdate(null);
+                manager.getBot().getNowplayingHandler().onTrackUpdate(null, null, null);
                 if (!manager.getBot().getConfig().getStay())
                     manager.getBot().closeAudioConnection(guildId);
                 player.setPaused(false);
@@ -174,11 +172,13 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler 
     @Override
     public void onTrackStart(AudioPlayer player, AudioTrack track) {
         votes.clear();
-        manager.getBot().getNowplayingHandler().onTrackUpdate(track);
+        RequestMetadata rm = track.getUserData(RequestMetadata.class);
+        String title = (rm != null && rm.title != null) ? rm.title : track.getInfo().title;
+        String imageUrl = (rm != null && rm.imageUrl != null) ? rm.imageUrl : null;
+        manager.getBot().getNowplayingHandler().onTrackUpdate(track, title, imageUrl);
     }
 
 
-    // Formatting
     public Message getNowPlaying(JDA jda) {
         if (isMusicPlaying(jda)) {
             Guild guild = guild(jda);
@@ -196,20 +196,22 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler 
                     eb.setAuthor(FormatUtil.formatUsername(u), null, u.getEffectiveAvatarUrl());
             }
 
-            String title = getTitle(track); // Get title using helper function
+            String title = getTitle(track);
+            String imageUrl = getImageUrl(track);
 
             try {
-                eb.setTitle(title, track.getInfo().uri); // Use the corrected title
+                eb.setTitle(title, track.getInfo().uri);
             } catch (Exception e) {
-                eb.setTitle(title); // Fallback if title is somehow still null
+                eb.setTitle(title);
             }
 
             if (track instanceof YoutubeAudioTrack && manager.getBot().getConfig().useNPImages()) {
                 eb.setThumbnail("https://img.youtube.com/vi/" + track.getIdentifier() + "/mqdefault.jpg");
+            } else if (imageUrl != null) {
+                eb.setThumbnail(imageUrl);
+            } else {
+                eb.setThumbnail("https://suno.com/placeholder-1.jpg");
             }
-
-            if (track.getInfo().author != null && !track.getInfo().author.isEmpty())
-                eb.setFooter("Source: " + track.getInfo().author, null);
 
             double progress = (double) audioPlayer.getPlayingTrack().getPosition() / track.getDuration();
             eb.setDescription(getStatusEmoji()
@@ -259,9 +261,13 @@ public class AudioHandler extends AudioEventAdapter implements AudioSendHandler 
         return jda.getGuildById(guildId);
     }
 
-    // Helper function to get the title from RequestMetadata or fallback
     private String getTitle(AudioTrack track) {
         RequestMetadata rm = track.getUserData(RequestMetadata.class);
         return (rm != null && rm.title != null) ? rm.title : track.getInfo().title;
+    }
+
+    private String getImageUrl(AudioTrack track) {
+        RequestMetadata rm = track.getUserData(RequestMetadata.class);
+        return (rm != null && rm.imageUrl != null) ? rm.imageUrl : null;
     }
 }

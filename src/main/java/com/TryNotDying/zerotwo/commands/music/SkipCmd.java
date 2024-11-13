@@ -1,35 +1,22 @@
-/*
- * Copyright 2016 TryNotDying  
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.TryNotDying.zerotwo.commands.music;
 
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.TryNotDying.zerotwo.Bot;
 import com.TryNotDying.zerotwo.audio.AudioHandler;
 import com.TryNotDying.zerotwo.audio.RequestMetadata;
+import com.TryNotDying.zerotwo.commands.DJCommand; //Import
 import com.TryNotDying.zerotwo.commands.MusicCommand;
 import com.TryNotDying.zerotwo.utils.FormatUtil;
+import com.TryNotDying.zerotwo.utils.SunoURLextractor; //Import
+import com.sedmelluq.discord.lavaplayer.track.AudioTrack; //Import
+import org.jsoup.Jsoup; //Import
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+import java.io.IOException; //Import
 
-/**
- *
- * @author TryNotDying < >
- */
-public class SkipCmd extends MusicCommand 
-{
-    public SkipCmd(Bot bot)
-    {
+
+public class SkipCmd extends MusicCommand {
+    public SkipCmd(Bot bot) {
         super(bot);
         this.name = "skip";
         this.help = "votes to skip the current song";
@@ -39,43 +26,40 @@ public class SkipCmd extends MusicCommand
     }
 
     @Override
-    public void doCommand(CommandEvent event) 
-    {
-        AudioHandler handler = (AudioHandler)event.getGuild().getAudioManager().getSendingHandler();
-        RequestMetadata rm = handler.getRequestMetadata();
-        double skipRatio = bot.getSettingsManager().getSettings(event.getGuild()).getSkipRatio();
-        if(skipRatio == -1) {
-          skipRatio = bot.getConfig().getSkipRatio();
+    public void doCommand(CommandEvent event) {
+        AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
+        if (!handler.isMusicPlaying(event.getJDA())) {
+            event.reply(event.getClient().getWarning() + " There is no music playing!");
+            return;
         }
-        if(event.getAuthor().getIdLong() == rm.getOwner() || skipRatio == 0)
-        {
-            event.reply(event.getClient().getSuccess()+" Skipped **"+handler.getPlayer().getPlayingTrack().getInfo().title+"**");
-            handler.getPlayer().stopTrack();
+        if (!DJCommand.checkDJPermission(event)) {
+            event.replyWarning("Only DJs can skip tracks!");
+            return;
         }
-        else
-        {
-            int listeners = (int)event.getSelfMember().getVoiceState().getChannel().getMembers().stream()
-                    .filter(m -> !m.getUser().isBot() && !m.getVoiceState().isDeafened()).count();
-            String msg;
-            if(handler.getVotes().contains(event.getAuthor().getId()))
-                msg = event.getClient().getWarning()+" You already voted to skip this song `[";
-            else
-            {
-                msg = event.getClient().getSuccess()+" You voted to skip the song `[";
-                handler.getVotes().add(event.getAuthor().getId());
-            }
-            int skippers = (int)event.getSelfMember().getVoiceState().getChannel().getMembers().stream()
-                    .filter(m -> handler.getVotes().contains(m.getUser().getId())).count();
-            int required = (int)Math.ceil(listeners * skipRatio);
-            msg += skippers + " votes, " + required + "/" + listeners + " needed]`";
-            if(skippers>=required)
-            {
-                msg += "\n" + event.getClient().getSuccess() + " Skipped **" + handler.getPlayer().getPlayingTrack().getInfo().title
-                    + "** " + (rm.getOwner() == 0L ? "(autoplay)" : "(requested by **" + FormatUtil.formatUsername(rm.user) + "**)");
-                handler.getPlayer().stopTrack();
-            }
-            event.reply(msg);
-        }
+        AudioTrack track = handler.getPlayer().getPlayingTrack();
+        String title = getCorrectedTitle(track);
+        handler.getPlayer().stopTrack();
+        event.replySuccess("Skipped **" + title + "**.");
     }
-    
+
+    private String getCorrectedTitle(AudioTrack track) {
+        RequestMetadata rm = track.getUserData(RequestMetadata.class);
+        if (rm != null && rm.title != null) {
+            return rm.title; 
+        } else if (track.getInfo().uri.startsWith("https://cdn1.suno.ai/")) {
+            try {
+                String sunoUrl = SunoURLextractor.reconstructSunoUrl(track.getInfo().uri);
+                if (sunoUrl != null) {
+                    Document doc = Jsoup.connect(sunoUrl).get();
+                    Elements titleTags = doc.select("meta[property=og:title]");
+                    if (!titleTags.isEmpty()) {
+                        return titleTags.first().attr("content");
+                    }
+                }
+            } catch (IOException e) {
+                System.err.println("Error fetching Suno title: " + e.getMessage());
+            }
+        }
+        return track.getInfo().title; 
+    }
 }

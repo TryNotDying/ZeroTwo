@@ -61,7 +61,7 @@ public class PlaynextCmd extends DJCommand {
             }
             AudioHandler handler = (AudioHandler) event.getGuild().getAudioManager().getSendingHandler();
             String songTitle = title != null ? title : track.getInfo().title;
-            int pos = handler.addTrackToFront(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, songTitle))) + 1;
+            int pos = handler.addTrackToFront(new QueuedTrack(track, RequestMetadata.fromResultHandler(track, event, title != null ? title : track.getInfo().title, null))) + 1;
             String addMsg = FormatUtil.filter(event.getClient().getSuccess() + " Added **" + track.getInfo().title
                     + "** (`" + TimeUtil.formatTime(track.getDuration()) + "`) " + (pos == 0 ? "to begin playing" : " to the queue at position " + pos));
             m.editMessage(addMsg).queue();

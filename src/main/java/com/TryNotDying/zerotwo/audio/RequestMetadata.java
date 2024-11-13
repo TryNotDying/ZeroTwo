@@ -9,24 +9,26 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RequestMetadata {
-    public static final RequestMetadata EMPTY = new RequestMetadata(null, null, null);
+    public static final RequestMetadata EMPTY = new RequestMetadata(null, null, null, null);
 
     public final UserInfo user;
     public final RequestInfo requestInfo;
-    public final String title; // Added title field
+    public final String title;
+    public final String imageUrl; // Added imageUrl field
 
-    public RequestMetadata(User user, RequestInfo requestInfo, String title) {
+    public RequestMetadata(User user, RequestInfo requestInfo, String title, String imageUrl) { 
         this.user = user == null ? null : new UserInfo(user.getIdLong(), user.getName(), user.getDiscriminator(), user.getEffectiveAvatarUrl());
         this.requestInfo = requestInfo;
         this.title = title;
+        this.imageUrl = imageUrl; 
     }
 
     public long getOwner() {
         return user == null ? 0L : user.id;
     }
 
-    public static RequestMetadata fromResultHandler(AudioTrack track, CommandEvent event, String title) { // Added title parameter
-        return new RequestMetadata(event.getAuthor(), new RequestInfo(event.getArgs(), track.getInfo().uri), title); // Pass title to constructor
+    public static RequestMetadata fromResultHandler(AudioTrack track, CommandEvent event, String title, String imageUrl) { 
+        return new RequestMetadata(event.getAuthor(), new RequestInfo(event.getArgs(), track.getInfo().uri), title, imageUrl); 
     }
 
     public static class RequestInfo {

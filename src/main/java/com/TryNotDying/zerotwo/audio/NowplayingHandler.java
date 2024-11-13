@@ -1,18 +1,3 @@
-/*
- * Copyright 2018 TryNotDying  
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.TryNotDying.zerotwo.audio;
 
 import com.TryNotDying.zerotwo.Bot;
@@ -31,10 +16,6 @@ import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.exceptions.PermissionException;
 import net.dv8tion.jda.api.exceptions.RateLimitedException;
 
-/**
- *
- * @author TryNotDying ( )
- */
 public class NowplayingHandler
 {
     private final Bot bot;
@@ -100,16 +81,16 @@ public class NowplayingHandler
     }
 
     // "event"-based methods
-    public void onTrackUpdate(AudioTrack track)
-    {
+    public void onTrackUpdate(AudioTrack track, String title, String imageUrl) {
         // update bot status if applicable
-        if(bot.getConfig().getSongInStatus())
-        {
-            if(track!=null && bot.getJDA().getGuilds().stream().filter(g -> g.getSelfMember().getVoiceState().inVoiceChannel()).count()<=1)
-                bot.getJDA().getPresence().setActivity(Activity.listening(track.getInfo().title));
+        if (bot.getConfig().getSongInStatus()) {
+            if (track != null && bot.getJDA().getGuilds().stream().filter(g -> g.getSelfMember().getVoiceState().inVoiceChannel()).count() <= 1)
+                bot.getJDA().getPresence().setActivity(Activity.listening(title != null ? title : track.getInfo().title)); //Use custom title if available, fallback to default
             else
                 bot.resetGame();
         }
+        // Update now playing message
+        updateAll();
     }
     
     public void onMessageDelete(Guild guild, long messageId)
