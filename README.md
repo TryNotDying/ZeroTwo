@@ -1,6 +1,6 @@
 ![banner4](https://github.com/user-attachments/assets/37edfd0f-6be9-49c8-a34f-6deedde39f47)
 
-# Zero-Two Discord Bot
+# Zero-Two | <sup><sub>The Discord Media Platform Bot</sub></sup>
 
 [![Downloads](https://img.shields.io/github/downloads/jagrosh/MusicBot/total.svg)](https://github.com/TryNotDying/ZeroTwo/releases/latest)
 [![Stars](https://img.shields.io/github/stars/jagrosh/MusicBot.svg)](https://github.com/TryNotDying/ZeroTwo/stargazers)
@@ -33,6 +33,7 @@ Zero-Two supports all sources and formats supported by [lavaplayer](https://gith
 ### Sources
   * YouTube
   * SoundCloud
+  * Suno Ai Music <sup><code style="color : greenyellow">NEW</code></sup>
   * Bandcamp
   * Vimeo
   * Twitch streams
