@@ -2,21 +2,19 @@
 
 # Zero-Two | <sup><sub>The Discord Media Platform Bot</sub></sup>
 
-[![Downloads](https://img.shields.io/github/downloads/jagrosh/MusicBot/total.svg)](https://github.com/TryNotDying/ZeroTwo/releases/latest)
-[![Stars](https://img.shields.io/github/stars/jagrosh/MusicBot.svg)](https://github.com/TryNotDying/ZeroTwo/stargazers)
-[![Release](https://img.shields.io/github/release/jagrosh/MusicBot.svg)](https://github.com/TryNotDying/ZeroTwo/releases/latest)
-[![License](https://img.shields.io/github/license/jagrosh/MusicBot.svg)](https://github.com/TryNotDying/ZeroTwo/blob/master/LICENSE)
-[![Discord](https://discordapp.com/api/guilds/147698382092238848/widget.png)](https://discord.gg/inserthere)<br>
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/jagrosh/MusicBot/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/TryNotDying/ZeroTwo/tree/master)
-[![Build and Test](https://github.com/jagrosh/MusicBot/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/TryNotDying/ZeroTwo/actions/workflows/build-and-test.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/jagrosh/musicbot/badge)](https://www.codefactor.io/repository/github/TryNotDying/ZeroTwo)
+[![Downloads](https://img.shields.io/github/downloads/TryNotDying/ZeroTwo/total.svg)](https://github.com/TryNotDying/ZeroTwo/releases/latest)
+[![Stars](https://img.shields.io/github/stars/TryNotDying/ZeroTwo.svg)](https://github.com/TryNotDying/ZeroTwo/stargazers)
+[![Release](https://img.shields.io/github/release/TryNotDying/ZeroTwo.svg)](https://github.com/TryNotDying/ZeroTwo/releases/latest)
+[![License](https://img.shields.io/github/license/TryNotDying/ZeroTwo.svg)](https://github.com/TryNotDying/ZeroTwo/blob/master/LICENSE)
+[![Discord](https://discordapp.com/api/guilds/147698382092238848/widget.png)](https://discord.gg/vz95h6jTP2)<br>
+[![Build and Test](https://github.com/TryNotDying/ZeroTwo/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/TryNotDying/ZeroTwo/actions/workflows/build-and-test.yml)
 
-A private Discord bot with a music player that has extensive support for many platforms. Including PORNHUB and is simple to set up, build, customize and run yourself!
+## Check it out! <sup>Build it! <sup>Customise it!</sup></sup> | Make it your own!
 
 [![Setup](http://i.imgur.com/VvXYp5j.png)](https://jmusicbot.com/setup)
 
 ## Features
-  * NEW - Added support for Suno.Ai Music links
+  * <sup><code style="color : greenyellow">NEW</code></sup> - Added support for Suno.Ai Music links
   * Easy to run (just make sure Java is installed, and run!)
   * Fast loading of songs
   * Discord Bot token required
